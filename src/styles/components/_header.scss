@@ -1,0 +1,17 @@
+.header {
+    background: $background;
+    width: 100%;
+    color: $white;
+    padding: $m-size;
+    .header__title {
+        margin: 0;
+        font-size: $l-size;
+        span {
+            font-size: $xl-size;
+        }
+    }
+    .header__subtitle {
+        color: #ccc;
+        padding-left: $m-size;
+    }
+}

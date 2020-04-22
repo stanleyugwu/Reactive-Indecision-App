@@ -1,0 +1,56 @@
+.count-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.8rem;
+    margin-bottom: $m-size;
+    flex-wrap: wrap-reverse;
+    button {
+        padding: .5rem 6rem;
+        border-radius: 0;
+    }
+    span {
+        align-self: baseline;
+    }
+}
+
+.options {
+    ul {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        border-top: 1px solid #777;
+        h2 {
+            margin: auto;
+            text-align: center;
+            color: #333;
+            margin: $l-size 0;
+        }
+        li {
+            width: 100%;
+            border-bottom: 1px solid #999;
+            display: flex;
+            justify-content: space-between;
+            padding: 1.8rem;
+            word-break: break-all;
+            color: #333;
+            margin: auto;
+            font-size: $m-size + 0.2;
+            font-weight: 600;
+            align-items: flex-end;
+            -ms-flex-align: start;
+            span {
+                padding-right: 1.5rem;
+                &:before {
+                    content: '\2666 ';
+                    color: $background !important;
+                    font-weight: 900;
+                    font-size: $m-size + .4;
+                    margin-right: $m-size;
+                }
+            }
+            button {
+                font-size: $m-size;
+            }
+        }
+    }
+}

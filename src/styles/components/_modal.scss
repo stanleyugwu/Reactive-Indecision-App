@@ -1,0 +1,64 @@
+.ReactModalPortal>div {
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    max-width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: opacity 300ms ease-in-out;
+    &::-webkit-scrollbar {
+        background: white;
+        border: 1px solid grey;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $background;
+        border-radius: 10rem;
+        border: 1px solid white;
+    }
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+    overflow-y: auto;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: $background + 9;
+    border-radius: 1rem;
+    outline: 0;
+    color: $white;
+    padding: $m-size;
+    margin: auto;
+    width: 70%;
+    h2 {
+        color: #eee;
+        &:before {
+            content: '\2666';
+            margin-right: $sm-size;
+        }
+    }
+    h3 {
+        margin: $m-size;
+        word-break: break-all;
+    }
+    button {
+        width: 60%;
+        padding: 1rem $m-size;
+        margin: $xl-size auto 0;
+        border: white;
+        font-size: $m-size;
+        color: $background;
+        font-weight: bold;
+        border-radius: 5rem;
+        display: flex;
+        outline: none;
+        justify-content: space-around;
+    }
+}

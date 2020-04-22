@@ -1,0 +1,42 @@
+form.addForm {
+    width: 100%;
+    padding: $m-size;
+    margin: 5rem auto;
+    h4 {
+        color: #555;
+        margin: $m-size + .4 0;
+        text-align: left;
+        &:before {
+            content: '* ';
+        }
+    }
+    &>p {
+        color: red;
+        font-size: $m-size;
+        font-weight: 550;
+        margin: $m-size 0;
+    }
+    input[type='text'] {
+        padding: $m-size - .3;
+        font-size: $m-size + .3;
+        color: #222;
+        width: 80%;
+        font-weight: 550;
+        outline: none;
+        border: 1px solid $background;
+    }
+    input[type='submit'] {
+        padding: $m-size - .3;
+        min-width: $l-size;
+        font-size: $m-size + .3;
+        background: $background;
+        color: #eee;
+        border: 1px solid $background;
+        width: 20%;
+        transition: all .2s ease-in-out;
+        &:hover {
+            background: white;
+            color: $background;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@media screen and (max-width: 420px) {
+    .header {
+        .header__title {
+            font-size: $l-size - .4;
+            span {
+                font-size: $xl-size - .8;
+            }
+        }
+        .header__subtitle {
+            font-size: $m-size + .2;
+        }
+    }
+    .big-button {
+        padding: 1.5rem;
+        width: 80%;
+        min-width: 180px;
+    }
+    .count-wrap {
+        padding-top: $m-size;
+        margin-bottom: $sm-size;
+        button {
+            margin: $m-size + .8 auto 0;
+            padding: .6rem 7rem;
+            min-width: 180px;
+        }
+        span {
+            align-self: flex-start;
+            color: #444;
+            font-weight: 550;
+            &:before {
+                content: '\2666 ';
+                color: #444;
+                margin-right: 0.4rem;
+            }
+        }
+    }
+    .options {
+        ul li {
+            font-size: $m-size;
+            flex-direction: column;
+            padding: 1.4rem;
+            justify-content: space-between;
+            span {
+                text-align: justify;
+                width: 100%;
+                padding: 0;
+            }
+            button {
+                align-self: flex-end;
+                margin-top: .3rem;
+                border-radius: 0;
+            }
+        }
+    }
+    form.addForm {
+        margin: 2rem auto;
+        input[type='text'] {
+            font-size: $m-size;
+            padding: $m-size - .6;
+        }
+        input[type='submit'] {
+            font-size: $m-size + .4;
+            display: block;
+            width: 50%;
+            margin: $m-size auto;
+            padding: $m-size - .6;
+        }
+    }
+    .modal {
+        width: 90% !important;
+        h2 {
+            font-size: $m-size + .4;
+        }
+        h3 {
+            font-size: $m-size;
+        }
+    }
+}
