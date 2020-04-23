@@ -4,16 +4,26 @@
     padding: 0 1.8rem;
     margin-bottom: $m-size;
     flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
     button {
         padding: .5rem 6rem;
         border-radius: 0;
     }
     span {
         align-self: baseline;
+        font-weight: 550;
+        color: #555;
     }
 }
 
 .options {
+    .optxt {
+        text-align: left;
+        padding-left: 1rem;
+        color: #777;
+        font-weight: 600;
+        display: none;
+    }
     ul {
         width: 100%;
         text-align: left;

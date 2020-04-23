@@ -9,5 +9,4 @@ console.log('App is Running!!')
 const appRoot = document.getElementById('app');
 
 
-//export {IndecisionApp as default}
-ReactDOM.render(<IndecisionApp options={[]}/>, appRoot);
+ReactDOM.render(<IndecisionApp/>, appRoot);

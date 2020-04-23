@@ -11,11 +11,7 @@ class IndecisionApp extends React.Component {
     selectedOption: undefined
   };
   handleRemoveAll = () => {
-    this.setState(() => {
-      return {
-        options: []
-      };
-    });
+    this.setState(() => ({options: []}));
   }
   handleAdd = (opt) => {
     if (!opt) return "Enter A valid Input Option...";
@@ -30,11 +26,7 @@ class IndecisionApp extends React.Component {
   }
   handlePick = () => {
     const option = this.state.options[Math.floor(Math.random() * this.state.options.length)]
-    this.setState((prev) => {
-      return {
-        selectedOption: option
-      };
-    })
+    this.setState(() => ({selectedOption: option}))
   }
   clearModal = () => {
     this.setState(()=> {
@@ -51,8 +43,8 @@ class IndecisionApp extends React.Component {
       }
     } catch (e) {}
   }
-  componentDidUpdate(state, props) {
-    if (state.options.length !== this.state.options.length) {
+  componentDidUpdate(props, prevState) {
+    if (prevState.options.length !== this.state.options.length) {
       localStorage.setItem("options", JSON.stringify(this.state.options));
     }
   }

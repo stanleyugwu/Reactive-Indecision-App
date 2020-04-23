@@ -4,7 +4,7 @@ const Action = (props) => (
         <div className="big-btn">
             <button className="big-button" onClick={props.handlePick}
                 disabled={props.optionLength > 1 ? false : true}
-            > What Should I Do </button>
+            > Which Should I Do </button>
         </div>
     )
     
